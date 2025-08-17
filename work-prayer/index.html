@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Непрокрастинаторий — Зажги свечу — получи бафф к дедлайну</title>
+		<meta name="description" content="Лендинг-ритуал перед рабочим днём: зажги свечу, получи молитву/мантру и предсказание, собери стрик и поделись карточкой.">
+		<meta name="theme-color" content="#0a0a0b">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Непрокрастинаторий">
+		<meta property="og:description" content="Зажги свечу — получи бафф к дедлайну. Молитва/мантра дня, предсказание и стрик.">
+		<meta property="og:image" content="assets/share-base.png">
+		<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+		<link rel="manifest" href="manifest.webmanifest">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<noscript>Для работы сайта требуется JavaScript.</noscript>
+		<header class="site-header">
+			<h1 class="brand">Непрокрастинаторий</h1>
+			<nav class="controls" aria-label="Настройки">
+				<div class="control">
+					<label for="roleSelect">Роль</label>
+					<select id="roleSelect" aria-label="Выбрать роль">
+						<option value="mediabuyer">mediabuyer</option>
+						<option value="designer">designer</option>
+						<option value="developer">developer</option>
+						<option value="pm">pm</option>
+						<option value="smm">smm</option>
+						<option value="any">any</option>
+					</select>
+				</div>
+				<div class="control">
+					<label class="switch">
+						<input type="checkbox" id="modeToggle" aria-label="Свято/Светско">
+						<span>Свято</span>
+					</label>
+				</div>
+				<div class="control">
+					<label class="switch">
+						<input type="checkbox" id="soundToggle" aria-label="Звук">
+						<span>Звук</span>
+					</label>
+				</div>
+				<button id="resetBtn" class="ghost" aria-label="Сброс локальных данных">Сброс</button>
+			</nav>
+		</header>
+
+		<main class="container">
+			<section class="hero" aria-labelledby="heroTitle">
+				<h2 id="heroTitle" class="tagline">Зажги свечу — получи <span class="accent" id="buffWord">бафф</span> к дедлайну</h2>
+				<button id="igniteBtn" class="ignite-btn" aria-label="Зажечь" title="Удерживайте, чтобы зажечь">
+					<span class="hold-ring" aria-hidden="true"></span>
+					Зажечь
+				</button>
+			</section>
+
+			<section class="ritual" aria-label="Свеча и таймер">
+				<div id="candle" class="candle" tabindex="0" role="button" aria-label="Свеча. Удерживайте для зажигания.">
+					<div class="candle-body">
+						<div class="wax" id="wax" title="Кликни по капле воска"></div>
+						<div class="flame" id="flame" title="Пламя свечи" aria-hidden="true"></div>
+						<div class="spark-progress" id="sparkProgress" aria-hidden="true"></div>
+					</div>
+				</div>
+				<div class="timer">
+					<div class="time" id="timeLeft" aria-live="polite" aria-atomic="true">10:00</div>
+					<div class="timer-actions">
+						<button id="stopBtn" class="ghost" aria-label="Остановить">Стоп</button>
+						<button id="relightBtn" class="ghost" aria-label="Перезажечь">Перезажечь</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="cards">
+				<article class="card" aria-live="polite" aria-atomic="true">
+					<h3 id="prayerTitle">Молитва дня</h3>
+					<p id="prayerText">Загрузка…</p>
+				</article>
+				<article class="card" aria-live="polite" aria-atomic="true">
+					<h3>Предсказание дня <span id="predEmoji" class="emoji" aria-hidden="true">🔮</span></h3>
+					<p id="predictionText">Загрузка…</p>
+				</article>
+			</section>
+
+			<section class="stats" aria-label="Статистика">
+				<div>Свечей сегодня: <strong id="candlesToday">0</strong></div>
+				<div>Стрик: <strong id="streak">0</strong></div>
+				<button id="shareBtn" class="primary">Поделиться</button>
+				<a id="downloadLink" class="ghost" download="neprocrastinatory.png" hidden>Сохранить PNG</a>
+			</section>
+
+			<canvas id="shareCanvas" width="1080" height="1080" hidden></canvas>
+			<div id="errorBanner" class="error-banner" role="status" aria-live="polite" hidden></div>
+		</main>
+
+		<footer class="site-footer">
+			<small>© 2025 Непрокрастинаторий. Лёгкий юмор, уважение к дедлайнам.</small>
+		</footer>
+
+		<script type="module" src="script.js"></script>
+		<script>
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('sw.js').catch(() => {});
+			}
+		</script>
+	</body>
+</html>

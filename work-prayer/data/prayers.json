@@ -1,0 +1,130 @@
+[
+	{
+		"id": "media_buyer_focus",
+		"mood": "focus",
+		"roles": ["mediabuyer","marketer","smm"],
+		"tone": "witty",
+		"text_sacred": "Пусть сегодня CPM будет смиренным, CTR — радостным, а бюджет не впадёт в искушение сгореть.",
+		"text_secular": "Да будет сегодня CPM скромным, CTR бодрым, а бюджет — дисциплинированным. Аминь-по-офисному."
+	},
+	{
+		"id": "universal_deadline",
+		"mood": "deadline",
+		"roles": ["any"],
+		"tone": "light",
+		"text_sacred": "Даруй мне силу закрыть таску прежде, чем меня найдёт новый митинг.",
+		"text_secular": "Дай сил закрыть задачу быстрее, чем календарь успеет зазвонить."
+	},
+	{
+		"id": "designer_colors",
+		"mood": "focus",
+		"roles": ["designer","any"],
+		"tone": "witty",
+		"text_sacred": "Пусть палитра будет согласной, а муза — отзывчивой.",
+		"text_secular": "Пусть цвета дружат, а муза не дропает фидбэк."
+	},
+	{
+		"id": "dev_builds",
+		"mood": "neutral",
+		"roles": ["developer","any"],
+		"tone": "deadpan",
+		"text_sacred": "Усмири сборку и яви зелёные тесты.",
+		"text_secular": "Пусть сборка не бурчит, а тесты зеленеют."
+	},
+	{
+		"id": "pm_scope",
+		"mood": "warn",
+		"roles": ["pm","any"],
+		"tone": "light",
+		"text_sacred": "Огради от расползания скоупа и добавь смирение к чек-листам.",
+		"text_secular": "Береги скоп от распухания и чекай списки с любовью."
+	},
+	{
+		"id": "smm_comments",
+		"mood": "neutral",
+		"roles": ["smm","any"],
+		"tone": "witty",
+		"text_sacred": "Да утихнут комментарии, и хайп придёт по расписанию.",
+		"text_secular": "Пусть комменты будут дружелюбными, а хайп — по плану."
+	},
+	{
+		"id": "mediabuyer_costs",
+		"mood": "warn",
+		"roles": ["mediabuyer","marketer"],
+		"tone": "witty",
+		"text_sacred": "Укрепи закупку и сократи излишние траты.",
+		"text_secular": "Закупай вдумчиво, не корми дорогие плейсменты."
+	},
+	{
+		"id": "any_focus_hour",
+		"mood": "focus",
+		"roles": ["any"],
+		"tone": "light",
+		"text_sacred": "Пошли один час непоколебимого фокуса.",
+		"text_secular": "Один фокус-час без уведомлений — и мир станет яснее."
+	},
+	{
+		"id": "mediabuyer_creatives",
+		"mood": "good",
+		"roles": ["mediabuyer","marketer"],
+		"tone": "witty",
+		"text_sacred": "Озаряй креативы инсайтами, а кнопки — кликабельностью.",
+		"text_secular": "Пусть креативам зайдёт инсайт, а кнопкам — кликабельность."
+	},
+	{
+		"id": "dev_code_review",
+		"mood": "focus",
+		"roles": ["developer","any"],
+		"tone": "light",
+		"text_sacred": "Даруй терпение в код-ревью и милость к неймингу.",
+		"text_secular": "Терпение в ревью, милость к неймингу — и всё получится."
+	},
+	{
+		"id": "designer_grid",
+		"mood": "neutral",
+		"roles": ["designer","any"],
+		"tone": "witty",
+		"text_sacred": "Пусть сетка будет милостива, а отступы — праведны.",
+		"text_secular": "Грид — чёткий, отступы — ровные, пиксели — на местах."
+	},
+	{
+		"id": "pm_sync",
+		"mood": "good",
+		"roles": ["pm","any"],
+		"tone": "light",
+		"text_sacred": "Соедини людей в одном смысле и времени.",
+		"text_secular": "Синхронимся быстро, понимаем одинаково, двигаемся вместе."
+	},
+	{
+		"id": "smm_calendar",
+		"mood": "focus",
+		"roles": ["smm","any"],
+		"tone": "light",
+		"text_sacred": "Устрой контенту время и место.",
+		"text_secular": "Контент-календарь всё выдержит — заполни его с умом."
+	},
+	{
+		"id": "any_meetings",
+		"mood": "warn",
+		"roles": ["any"],
+		"tone": "witty",
+		"text_sacred": "Огради от множества собраний без смысла.",
+		"text_secular": "Митинги множатся — режь повестку смело."
+	},
+	{
+		"id": "mediabuyer_attribution",
+		"mood": "neutral",
+		"roles": ["mediabuyer","marketer"],
+		"tone": "deadpan",
+		"text_sacred": "Укажи путь атрибуции, чтобы не заблудиться между UTM.",
+		"text_secular": "Атрибуция — не тропа в тумане, расставь метки и иди."
+	},
+	{
+		"id": "any_gratitude",
+		"mood": "good",
+		"roles": ["any"],
+		"tone": "light",
+		"text_sacred": "Напомни благодарить за малые победы.",
+		"text_secular": "Замечай малые победы — они двигают день."
+	}
+]

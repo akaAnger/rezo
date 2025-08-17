@@ -1,0 +1,14 @@
+{
+	"name": "Непрокрастинаторий",
+	"short_name": "Непрокрастинаторий",
+	"start_url": ".",
+	"scope": ".",
+	"display": "standalone",
+	"background_color": "#0a0a0b",
+	"theme_color": "#0a0a0b",
+	"icons": [
+		{ "src": "icons/favicon.svg", "sizes": "64x64", "type": "image/svg+xml", "purpose": "any" },
+		{ "src": "icons/maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable any" },
+		{ "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+	]
+}
